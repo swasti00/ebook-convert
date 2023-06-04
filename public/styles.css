@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: aliceblue;
+}
+.layout{
+    margin: 5% 13%;
+    height: 80vh;
+}
+
+h4{
+    text-align: center;
+    font-weight: lighter;
+    justify-content: space-around;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+header ul li{
+    list-style: none;
+    padding-left: 15px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(42, 41, 43);
+    font-weight: 500;
+    border-radius: 20px;
+}
+header ul li a:hover{
+    background-color: rgb(42, 41, 43);
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.layout{
+    text-align: center;
+    color: rgb(27, 26, 27);
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 200;
+    padding-top: 3%;
+}
+.lay{
+    letter-spacing: 1px;
+    padding-top: 2%;
+}
+
+.form{
+    padding-top: 5%;
+    margin-left: 20%;
+    width: 60%;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding-top: 4%;
+}
+
+.btn {
+  border: 2px solid rgb(27, 26, 27);
+  color: rgb(27, 26, 27);
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.epub {
+    padding: 5px 10px;
+    border: 1px solid rgb(27, 26, 27);
+    color: rgb(27, 26, 27);
+    background-color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    animation-name: button;
+    animation-duration: 4s;
+}
+@keyframes button {
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+.epub:hover{
+    background-color: rgb(27, 26, 27);
+    color: white;
+    border: 1px solid white;
+}
+
+.mobi {
+    padding: 5px 10px;
+    border: 1px solid rgb(27, 26, 27);
+    color: rgb(27, 26, 27);
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 3%;
+    font-weight: 600;
+    animation-name: button;
+    animation-duration: 4s;
+}
+.mobi:hover{
+    background-color: rgb(27, 26, 27);
+    color: white;
+    border: 1px solid white;
+}
+
+.azw {
+    padding: 5px 10px;
+    border: 1px solid rgb(27, 26, 27);
+    color: rgb(27, 26, 27);
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 50px;
+    font-weight: 600;
+    animation-name: button;
+    animation-duration: 4s;
+}
+.azw:hover{
+    background-color: rgb(27, 26, 27);
+    color: white;
+    border: 1px solid white;
+}
+.downloadbtn{
+    border: 1px solid rgb(27, 26, 27);
+    color: rgb(27, 26, 27);
+    background-color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 10px;
+    animation-name: button;
+    animation-duration: 4s;
+}
+.downloadbtn:hover{
+    background-color: rgb(27, 26, 27);
+    color: white;
+    border: 1px solid white;
+}
+.row{
+    margin-top: 10%;
+    width: 90%;
+    padding-left: 10%;
+    animation-name: col;
+    animation-duration: 4s;
+}
+.loader {
+    margin-left: 105%;
+    margin-top: -10%;
+    border: 3px solid white; 
+    border-top: 3px solid rgb(27, 26, 27); 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+.loader-btn {
+    border: 3px solid white; 
+    border-top: 3px solid rgb(27, 26, 27); 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin-left: 49%;
+    margin-top: 3%;
+}
+  
+  
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

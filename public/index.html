@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ebook Convert</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&amp;display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="layout">
+  <h1>Ebook Convert</h1>
+  <p class="lay">Convert your PDF's into any ebook format.</p>
+  <input type="hidden" id="url" name="url" value="">
+  <input type="hidden" id="id" name="id" value="">
+    <div class="form-input">
+      <form id="form" method="post" enctype="multipart/form-data">    
+        <input type="hidden" id="expires" name="expires" value="">
+        <input type="hidden" id="max_file_count" name="max_file_count" value="1">
+        <input type="hidden" id="size_limit" name="size_limit" value="">
+        <input type="hidden" id="signature" name="signature" value="">
+        <div class="form" id="load">
+          <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+            <input class="form-control border-0" name="file" accept=".pdf" type="file" id="file" required="">
+          </div>
+        </div>
+      </form>
+    </div>
+   
+        <div id="createbtn">
+        </div>
+        <div id="l">  
+        </div>
+
+      <a id="btn">
+      </a>
+
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Epub</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>EPUB is an e-book file format. The term is short
+                   for electronic publication and is sometimes styled ePub. EPUB is supported by many e-readers,
+                   and compatible software is available for most smartphones, tablets, and computers.  
+                   EPUB is a technical standard published by the International Digital Publishing Forum (IDPF).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Mobi</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>A MOBI is an eBook  format originally used by 
+                  the Mobipocket Reader but now supported by several different readers. It contains an eBook
+                   and may incorporate DRM copyright protection to prevent copying or unauthorized viewing.
+                    MOBI files are supported by various
+                   eReaders, tablets, PDAs, and desktop computer applications.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Azw</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Data files also refer to project output files of ebook reader programs, and these data
+                   files may also be used by ebook authoring and editing applications. Amazon developed the AZW
+                    format as the project output files integrated with specifications and standards used by the
+                     Amazon Kindle reader device. </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-storage-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore-compat.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/fetch_api.js"></script>
+    <script src="./js/convert.js"></script>
+    <script src="./js/upload.js"></script>
+    <script src="./js/create_btn.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/download.js"></script>
+
+</body>
+</html>
